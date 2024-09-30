@@ -10,7 +10,7 @@ import (
 
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/anthropic/internal/anthropicclient"
+	"github.com/sedletsky-f5/langchaingo/llms/anthropic/internal/anthropicclient"
 )
 
 var (

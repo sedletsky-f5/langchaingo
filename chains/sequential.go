@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tmc/langchaingo/internal/maputil"
-	"github.com/tmc/langchaingo/internal/setutil"
+	"github.com/sedletsky-f5/langchaingo/internal/maputil"
+	"github.com/sedletsky-f5/langchaingo/internal/setutil"
 	"github.com/tmc/langchaingo/memory"
 	"github.com/tmc/langchaingo/schema"
 )

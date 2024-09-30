@@ -7,7 +7,7 @@ import (
 
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/cloudflare/internal/cloudflareclient"
+	"github.com/sedletsky-f5/langchaingo/llms/cloudflare/internal/cloudflareclient"
 )
 
 var (

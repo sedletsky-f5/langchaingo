@@ -10,7 +10,7 @@ import (
 
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/local/internal/localclient"
+	"github.com/sedletsky-f5/langchaingo/llms/local/internal/localclient"
 )
 
 var (

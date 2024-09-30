@@ -8,7 +8,7 @@ import (
 
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/ernie/internal/ernieclient"
+	"github.com/sedletsky-f5/langchaingo/llms/ernie/internal/ernieclient"
 )
 
 var (

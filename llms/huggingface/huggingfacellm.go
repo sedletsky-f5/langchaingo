@@ -7,7 +7,7 @@ import (
 
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/huggingface/internal/huggingfaceclient"
+	"github.com/sedletsky-f5/langchaingo/llms/huggingface/internal/huggingfaceclient"
 )
 
 var (

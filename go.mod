@@ -231,4 +231,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0
 )
 
-replace github.com/tmc/langchaingo => github.com/sedletsky-f5/langchaingo main
+replace github.com/tmc/langchaingo => github.com/sedletsky-f5/langchaingo v0.0.0-20240930190816-30c99c6a60cb

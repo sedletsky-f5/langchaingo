@@ -1,8 +1,8 @@
 module github.com/tmc/langchaingo/examples/vertex-completion-example
 
-go 1.22.0
+go 1.21.4
 
-toolchain go1.22.1
+toolchain go1.21.13
 
 require github.com/tmc/langchaingo v0.1.13-pre.0
 
@@ -28,6 +28,7 @@ require (
 	github.com/googleapis/enterprise-certificate-proxy v0.3.2 // indirect
 	github.com/googleapis/gax-go/v2 v2.12.4 // indirect
 	github.com/pkoukk/tiktoken-go v0.1.6 // indirect
+	github.com/sedletsky-f5/langchaingo v0.0.0-20240930203630-4e540e7a13df // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.51.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.51.0 // indirect

@@ -39,7 +39,7 @@ func (n *NotionDirectoryLoader) Load() ([]schema.Document, error) {
 
 	documents := make([]schema.Document, 0, len(files))
 	for _, file := range files {
-		if file.IsDir() || filepath.Ext(file.Name()) != ".md" {
+		if file.IsDir() || (filepath.Ext(file.Name()) != ".md" && filepath.Ext(file.Name()) != ".mdx") {
 			continue
 		}
 

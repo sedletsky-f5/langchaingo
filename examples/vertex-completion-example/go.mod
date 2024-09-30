@@ -51,4 +51,4 @@ require (
 )
 
 // test for new pkg version
-replace github.com/tmc/langchaingo => ../..
+replace github.com/sedletsky-f5/langchaingo => ../..

@@ -11,6 +11,7 @@ cover.cov
 # IDE
 .idea
 .vscode
+.history
 
 # dev
 .env

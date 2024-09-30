@@ -91,6 +91,7 @@ func TestExecutorWithMRKLAgent(t *testing.T) {
 
 	calculator := tools.Calculator{}
 
+	//nolint:staticcheck,SA1019
 	a, err := agents.Initialize(
 		llm,
 		[]tools.Tool{searchTool, calculator},

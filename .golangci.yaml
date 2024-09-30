@@ -38,6 +38,7 @@ linters:
     - canonicalheader
     - intrange
     - testifylint
+    - paralleltest  # TODO: until go 1.22
 
 linters-settings:
   cyclop:

@@ -1,4 +1,4 @@
-module github.com/sedletsky-f5/langchaingo
+module github.com/tmc/langchaingo
 
 go 1.21.4
 
@@ -230,3 +230,5 @@ require (
 	google.golang.org/protobuf v1.34.1
 	sigs.k8s.io/yaml v1.3.0
 )
+
+replace github.com/tmc/langchaingo => github.com/sedletsky-f5/langchaingo main

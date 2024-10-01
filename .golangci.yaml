@@ -39,6 +39,7 @@ linters:
     - intrange
     - testifylint
     - paralleltest  # TODO: until go 1.22
+    - gomoddirectives # to allow replace in go.mod
 
 linters-settings:
   cyclop:
@@ -64,8 +65,6 @@ linters-settings:
   gosec:
     excludes:
     - G115 # https://github.com/securego/gosec/issues/1212
-  gomoddirectives:
-    ignore-replace: true
 run:
   exclude-dirs:
     - 'exp'

@@ -64,6 +64,8 @@ linters-settings:
   gosec:
     excludes:
     - G115 # https://github.com/securego/gosec/issues/1212
+  gomoddirectives:
+    ignore-replace: true
 run:
   exclude-dirs:
     - 'exp'

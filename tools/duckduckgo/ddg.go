@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
+	"github.com/sedletsky-f5/langchaingo/tools/duckduckgo/internal"
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/tools"
-	"github.com/sedletsky-f5/langchaingo/tools/duckduckgo/internal"
 )
 
 // DefaultUserAgent defines a default value for user-agent header.

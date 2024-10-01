@@ -5,9 +5,9 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/sedletsky-f5/langchaingo/llms/cloudflare/internal/cloudflareclient"
 	"github.com/tmc/langchaingo/callbacks"
 	"github.com/tmc/langchaingo/llms"
-	"github.com/sedletsky-f5/langchaingo/llms/cloudflare/internal/cloudflareclient"
 )
 
 var (

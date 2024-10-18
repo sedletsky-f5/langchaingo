@@ -31,6 +31,7 @@ linters:
     - perfsprint
     - musttag
     - tagalign # Impractical for schema-defined output parser, which relies heavily on struct tagging.
+    - paralleltest  # TODO: until go 1.22
 
 linters-settings:
   cyclop:

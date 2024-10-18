@@ -6,7 +6,7 @@ toolchain go1.21.13
 
 require (
 	github.com/milvus-io/milvus-sdk-go/v2 v2.3.6
-	github.com/tmc/langchaingo v0.1.12-pre.0
+	github.com/sedletsky-f5/langchaingo v0.0.0-20241018041002-a4e9cac01117
 )
 
 require (

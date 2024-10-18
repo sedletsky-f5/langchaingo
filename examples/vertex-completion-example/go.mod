@@ -4,7 +4,7 @@ go 1.21.4
 
 toolchain go1.21.13
 
-require github.com/tmc/langchaingo v0.1.12-pre.0
+require github.com/sedletsky-f5/langchaingo v0.0.0-20241018041002-a4e9cac01117
 
 require (
 	cloud.google.com/go v0.114.0 // indirect

@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/pkoukk/tiktoken-go"
+	"github.com/sedletsky-f5/langchaingo/schema"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/schema"
 )
 
 //nolint:dupword,funlen

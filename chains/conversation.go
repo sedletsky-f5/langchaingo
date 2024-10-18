@@ -1,10 +1,10 @@
 package chains
 
 import (
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/outputparser"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/sedletsky-f5/langchaingo/llms"
+	"github.com/sedletsky-f5/langchaingo/outputparser"
+	"github.com/sedletsky-f5/langchaingo/prompts"
+	"github.com/sedletsky-f5/langchaingo/schema"
 )
 
 //nolint:lll

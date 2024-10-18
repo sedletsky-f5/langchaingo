@@ -9,10 +9,10 @@ import (
 	z "github.com/getzep/zep-go"
 	zClient "github.com/getzep/zep-go/client"
 	zOption "github.com/getzep/zep-go/option"
+	"github.com/sedletsky-f5/langchaingo/llms/openai"
+	"github.com/sedletsky-f5/langchaingo/memory"
+	"github.com/sedletsky-f5/langchaingo/memory/zep"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/memory/zep"
 )
 
 func TestConversation(t *testing.T) {

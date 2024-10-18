@@ -6,11 +6,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/sedletsky-f5/langchaingo/callbacks"
+	"github.com/sedletsky-f5/langchaingo/llms/googleai"
+	"github.com/sedletsky-f5/langchaingo/llms/openai"
+	"github.com/sedletsky-f5/langchaingo/prompts"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms/googleai"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/prompts"
 )
 
 func TestLLMChain(t *testing.T) {
@@ -77,7 +77,7 @@ func TestLLMChainWithGoogleAI(t *testing.T) {
 	chain := NewLLMChain(model, prompt)
 
 	// chains tramples over defaults for options, so setting these options
-	// explicitly is required until https://github.com/tmc/langchaingo/issues/626
+	// explicitly is required until https://github.com/sedletsky-f5/langchaingo/issues/626
 	// is fully resolved.
 	result, err := Predict(context.Background(), chain,
 		map[string]any{

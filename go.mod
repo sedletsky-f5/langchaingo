@@ -1,6 +1,8 @@
-module github.com/tmc/langchaingo
+module github.com/sedletsky-f5/langchaingo
 
-go 1.22.0
+go 1.21.4
+
+toolchain go1.21.13
 
 require (
 	github.com/google/uuid v1.6.0

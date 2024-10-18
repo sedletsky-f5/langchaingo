@@ -3,8 +3,8 @@ package agents
 import (
 	"testing"
 
+	"github.com/sedletsky-f5/langchaingo/schema"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/schema"
 )
 
 func TestMRKLOutputParser(t *testing.T) {

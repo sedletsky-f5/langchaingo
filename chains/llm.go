@@ -29,6 +29,7 @@ var (
 	_ callbacks.HandlerHaver = &LLMChain{}
 )
 
+//nolint:gochecknoglobals
 var Logger *log.Logger // by default, nil (to be updated outside, if needed)
 
 // NewLLMChain creates a new LLMChain with an LLM and a prompt.

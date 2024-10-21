@@ -2,6 +2,7 @@ package chains
 
 import (
 	"context"
+	"log"
 
 	"github.com/sedletsky-f5/langchaingo/callbacks"
 	"github.com/sedletsky-f5/langchaingo/llms"
@@ -27,6 +28,8 @@ var (
 	_ Chain                  = &LLMChain{}
 	_ callbacks.HandlerHaver = &LLMChain{}
 )
+
+var Logger *log.Logger // by default, nil (to be updated outside, if needed)
 
 // NewLLMChain creates a new LLMChain with an LLM and a prompt.
 func NewLLMChain(llm llms.Model, prompt prompts.FormatPrompter, opts ...ChainCallOption) *LLMChain {
@@ -54,6 +57,10 @@ func (c LLMChain) Call(ctx context.Context, values map[string]any, options ...Ch
 	promptValue, err := c.Prompt.FormatPrompt(values)
 	if err != nil {
 		return nil, err
+	}
+
+	if Logger != nil {
+		Logger.Println("Prompt:\n", promptValue.String())
 	}
 
 	result, err := llms.GenerateFromSinglePrompt(ctx, c.LLM, promptValue.String(), getLLMCallOptions(options...)...)

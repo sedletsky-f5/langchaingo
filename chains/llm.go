@@ -74,6 +74,10 @@ func (c LLMChain) Call(ctx context.Context, values map[string]any, options ...Ch
 		return nil, err
 	}
 
+	if Logger != nil {
+		Logger.Println("Output:\n", finalOutput)
+	}
+
 	return map[string]any{c.OutputKey: finalOutput}, nil
 }
 

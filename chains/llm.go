@@ -61,7 +61,7 @@ func (c LLMChain) Call(ctx context.Context, values map[string]any, options ...Ch
 	}
 
 	if Logger != nil {
-		Logger.Println("Prompt:\n", promptValue.String())
+		Logger.Printf("Prompt:\n%s\n", promptValue.String())
 	}
 
 	result, err := llms.GenerateFromSinglePrompt(ctx, c.LLM, promptValue.String(), getLLMCallOptions(options...)...)
@@ -75,7 +75,7 @@ func (c LLMChain) Call(ctx context.Context, values map[string]any, options ...Ch
 	}
 
 	if Logger != nil {
-		Logger.Println("Output:\n", finalOutput)
+		Logger.Printf("Output:\n%s\n", finalOutput)
 	}
 
 	return map[string]any{c.OutputKey: finalOutput}, nil
